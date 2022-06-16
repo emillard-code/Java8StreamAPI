@@ -10,7 +10,10 @@ public class SortingApp {
 
         List<String> names = Arrays.asList("Reflection", "Collection", "Stream");
 
-        List<String> result = names.stream().sorted().collect(Collectors.toList());
+        List<String> result = names
+                .stream()
+                .sorted()
+                .collect(Collectors.toList());
 
         System.out.println(result);
 
